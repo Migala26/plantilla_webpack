@@ -11,5 +11,6 @@ module.exports = {
             { test: dir_js,
               loader: 'babel-loader' }
         ]
-    }
+    },
+    devtool: 'source-map'
 }
