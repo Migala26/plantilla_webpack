@@ -1,5 +1,5 @@
 function saludar(nombre) {
-    return "hola qué tal, " + nombre
+    return "Hola qué tal, " + nombre
 }
 
 export {saludar}

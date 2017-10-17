@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'  
 
+import {saludar} from './modulo'
+
 class HelloMessage extends React.Component {
     render() {
         return React.createElement(
             "div",
             null,
-            "Hello ",
-            this.props.name
+            saludar(this.props.name)
         );
     }
 }
