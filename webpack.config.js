@@ -8,8 +8,13 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: dir_js,
-              loader: 'babel-loader' }
+            { 
+                test: dir_js,
+                loader: 'babel-loader',
+                query: {
+                    presets: ['es2015', 'react']
+                } 
+            }
         ]
     },
     devtool: 'source-map'
