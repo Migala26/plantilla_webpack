@@ -3,17 +3,15 @@ import ReactDOM from 'react-dom'
 
 import {saludar} from './modulo'
 
-class HelloMessage extends React.Component {
+class ComponenteSaludo extends React.Component {
     render() {
-        return React.createElement(
-            "div",
-            null,
-            saludar(this.props.name)
-        );
+        return <div>
+            {saludar(this.props.nombre)}
+        </div> 
     }
 }
 
-ReactDOM.render(React.createElement(HelloMessage, { name: "John" })
+ReactDOM.render(<ComponenteSaludo nombre="Pepe"/>
             , document.getElementById('componente'));  
 
 
